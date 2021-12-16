@@ -37,7 +37,7 @@ let build = (name, nextName, nextName2) =>{
     switch (name) {
 
         case "start":
-            setTimeout(() => {
+            ref0.addEventListener("ended", function(){
                 let tituleProof0 = document.querySelector(".tituleProof0")
                 let containerProof0  = document.querySelector(".containerProof0")
                 let titulea2 = document.querySelector(".titulea2")
@@ -47,7 +47,7 @@ let build = (name, nextName, nextName2) =>{
                 containerProof0.classList.add("containerProof0animate")
                 titulea2.classList.add("titulea2animate")
                 titulea1.classList.add("titulea1animate")
-            }, 13000);
+            });
 
             break
         case "proof0":
